@@ -38,10 +38,10 @@ def access(user_name, pin):
             else:
                 print("Entered wrong password\nTry again.(You have {i}chances left.)")
         return False
-    return True
+    return False
 
 def check_balance(user_name):
-        return f"Balance: ${bank[user_name]["balance"]}"
+        return {bank[user_name]["balance"]}
     
 def check_history(user_name):
     
@@ -52,11 +52,13 @@ def check_history(user_name):
         history_recipt += f"{i[0]: ${i[1]}}\n"
 
     balance = check_balance(user_name)
-    history_recipt += f"Total {balance}"
+    history_recipt += f"Total Balance: ${balance}"
     return history_recipt
 
 def withdraw(user_name,amount):
-    pass
+    if amount <= check_balance(user_name):
+
+
 
 def deposit(user_name, amount):
     pass
