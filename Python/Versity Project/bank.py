@@ -58,8 +58,6 @@ def check_history(user_name):
 def withdraw(user_name,amount):
     if amount <= check_balance(user_name):
 
-
-
 def deposit(user_name, amount):
     pass
 
