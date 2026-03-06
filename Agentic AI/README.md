@@ -43,7 +43,7 @@ Notes:
 From `Agentic AI/`:
 
 ```bash
-pip install fastapi uvicorn python-dotenv python-telegram-bot langchain langchain-community langchain-core langchain-groq
+pip install -r requirements.txt
 ```
 
 ## Run
